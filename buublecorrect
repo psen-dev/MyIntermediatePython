@@ -1,0 +1,9 @@
+l=eval(input("Enter: []"))
+m=True
+while m:
+    m=False
+    for i in range(len(l)-1):
+        if l[i]>l[i+1]:
+            l[i], l[i+1]=l[i+1], l[i]
+            m=True
+print(l)

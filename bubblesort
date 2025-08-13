@@ -1,0 +1,12 @@
+def bubblesort(l):
+    for i in range(len(l)):
+        swap=False
+        for j in range(i):
+            if l[j]>l[i]:
+                l[j], l[i]=l[i], l[j]
+                swap=True
+        if not swap:
+            return l
+            break
+
+
